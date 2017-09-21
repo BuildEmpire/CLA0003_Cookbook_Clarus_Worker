@@ -12,6 +12,6 @@ recipe 'cookbook_clarus_worker', 'The Clarus worker cookbook, running resque.'
   supports os
 end
 
-%w{appbox apt build-essential ruby_rbenv ruby_build}.each do |cb|
+%w{appbox apt build-essential postgresql ruby_rbenv ruby_build}.each do |cb|
   depends cb
 end
