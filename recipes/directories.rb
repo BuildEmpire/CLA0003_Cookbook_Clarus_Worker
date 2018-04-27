@@ -14,3 +14,12 @@ directory app_root do
   action :create
   recursive true
 end
+
+# Create the base location for the storage ftp files
+directory ftp_root do
+  owner deploy_user
+  group deploy_user
+  mode '0755'
+  action :create
+  recursive true
+end
