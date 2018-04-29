@@ -4,6 +4,7 @@
 #
 
 app_root = node['cookbook_clarus_worker']['app_root']
+ftp_root = node['cookbook_clarus_worker']['ftp_root']
 deploy_user = node['appbox']['deploy_user']
 
 # Create the base location for the shared files
